@@ -1,0 +1,175 @@
+<!doctype html>
+<html>
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+	<title>Hello, world!</title>
+	
+	<style>
+		label{
+			font-weight: 800;
+		}
+		svg{
+			color: darkgreen;
+			opacity: 0;
+			transition: 0.3s;
+		}
+	</style>
+
+  </head>
+  
+  
+  
+  
+  
+  <body>
+	  
+	<div class="container">
+		<h1 class="py-5">Esempio gestione eventi: Form</h1>
+
+		<div class="row">
+			<div class="col-12 col-md-4">
+				<div class="card p-4">
+					<form>
+						<div class="form-group pb-3">
+							<label for="exampleFirstname">First Name</label>
+								<svg id="svg1" width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-check-circle" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+								<path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+								<path fill-rule="evenodd" d="M10.97 4.97a.75.75 0 0 1 1.071 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.236.236 0 0 1 .02-.022z"/>
+								</svg>
+							<input type="text" class="form-control" id="exampleInputFirstname" placeholder="John">
+							<small id="feed1" class="form-text text-muted"></small>
+						</div>
+						
+						<div class="form-group pb-3">
+							<label for="exampleLastname">Last Name*</label>
+								<svg id="svg2" width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-check-circle" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+								<path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+								<path fill-rule="evenodd" d="M10.97 4.97a.75.75 0 0 1 1.071 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.236.236 0 0 1 .02-.022z"/>
+								</svg>
+							<input type="text" class="form-control" id="exampleInputLastname" placeholder="Doe" required>
+							<small id="feed2" class="form-text text-muted"></small>
+						</div>
+						
+						<div class="form-group pb-3">
+							<label for="exampleMobile">Mobile*</label>
+								<svg id="svg3" width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-check-circle" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+								<path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+								<path fill-rule="evenodd" d="M10.97 4.97a.75.75 0 0 1 1.071 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.236.236 0 0 1 .02-.022z"/>
+								</svg>
+							<input type="tel" class="form-control" id="exampleInputMobile" placeholder="3331112222" pattern="[0-9]{10}" required>
+							<small id="feed3" class="form-text text-muted"></small>
+						</div>
+						
+						<div class="form-group pb-3">
+							<label for="exampleInputEmail">Email address*</label>
+								<svg id="svg4" width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-check-circle" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+								<path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+								<path fill-rule="evenodd" d="M10.97 4.97a.75.75 0 0 1 1.071 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.236.236 0 0 1 .02-.022z"/>
+								</svg>
+							<input type="email" class="form-control" id="exampleInputEmail" aria-describedby="emailHelp" placeholder="example@gmail.com" required>
+							<small id="feed4" class="form-text text-muted"></small>
+						</div>
+						
+						<div class="form-group pb-3">
+							<label for="exampleInputPassword">Password*</label required>
+								<svg id="svg5" width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-check-circle" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+								<path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+								<path fill-rule="evenodd" d="M10.97 4.97a.75.75 0 0 1 1.071 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.236.236 0 0 1 .02-.022z"/>
+								</svg>
+							<input type="password" class="form-control" id="exampleInputPassword">
+							<small id="feed5" class="form-text text-muted"></small>
+						</div>
+						
+						<div class="form-group pb-3 form-check">
+							<input type="checkbox" class="form-check-input" id="exampleCheck" required>
+							<label class="form-check-label" for="exampleCheck">Check me out*</label>
+						</div>
+						
+						<button type="submit" class="btn btn-primary">Submit</button>
+					</form>
+				</div>
+			</div>
+			<div class="col-12 col-md-4">
+				<h3>Eventi gestiti tramite Javascript</h3>
+				<ul class="pt-3">
+					<li>First Name</li>
+					<ul>
+						<li>Numero minimo di caratteri (Minimo 6)</li>
+						<li>Input di solo contenuto testuale (NO numeri)</li>
+						<li>In caso di input sbagliato: bordi rossi + testo rosso</li>
+						<li>In caso di input corretto: bordi verdi + icona</li>
+					</ul>
+					<li>Last Name</li>
+					<ul>
+						<li>Numero minimo di caratteri (Minimo 6)</li>
+						<li>Input di solo contenuto testuale (NO numeri)</li>
+						<li>In caso di input sbagliato: bordi rossi + testo rosso</li>
+						<li>In caso di input corretto: bordi verdi + icona</li>
+					</ul>
+					<li>Mobile</li>
+					<ul>
+						<li>Numero massimo di caratteri (Massimo 10)</li>
+						<li>Input di solo contenuto numerico (NO lettere)</li>
+						<li>In caso di input sbagliato: bordi rossi + testo rosso</li>
+						<li>In caso di input corretto: bordi verdi + icona</li>
+					</ul>
+					<li>Email address</li>
+					<ul>
+						<li>Input obbligatorio di "@"</li>
+						<li>In caso di input sbagliato: bordi rossi + testo rosso</li>
+						<li>In caso di input corretto: bordi verdi + icona</li>
+					</ul>
+					<li>Password</li>
+					<ul>
+						<li>Numero minimo di caratteri (Minimo 6)</li>
+						<li>In caso di input sbagliato: bordi rossi + testo rosso</li>
+						<li>In caso di input corretto: bordi verdi + icona</li>
+					</ul>
+				</ul>
+			</div>
+			<div class="col-12 col-md-4">
+				<h3>Eventi gestiti tramite HTML</h3>
+				<ul class="pt-3">
+					<li>Last Name</li>
+					<ul>
+						<li>Controllo compilazione obbligatoria (required)</li>
+					</ul>
+					<li>Mobile</li>
+					<ul>
+						<li>Controllo compilazione obbligatoria (required)</li>
+						<li>Controllo compilazione corretta del pattern (10 numeri: XXX XXX XXXX)</li>
+						<li>Controllo compilazione corretta dell'input (No lettere + caratteri speciali)</li>
+					</ul>
+					<li>Email address</li>
+					<ul>
+						<li>Controllo compilazione obbligatoria (required)</li>
+						<li>Controllo compilazione corretta dell'input (@ obbligatoria + testo dopo @)</li>
+					</ul>
+					<li>Password</li>
+					<ul>
+						<li>Controllo compilazione obbligatoria (required)</li>
+					</ul>
+					<li>Checkbox</li>
+					<ul>
+						<li>Controllo compilazione obbligatoria (required)</li>
+					</ul>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<script src="gestione-eventi.js"></script>
+	
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+  </body>
+  </html>
